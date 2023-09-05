@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(
   fileUpload({ limits: { fieldSize: 50 * 1024 * 1024 }, useTempFiles: true })
 );
-app.use(cors());
+app.use(cors("*"));
 
 //Route Imports
 const user = require("./backend/routes/userRoute");
