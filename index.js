@@ -1,4 +1,4 @@
-const app = require("./backend/app");
+const app = require("./app");
 const dotenv = require("dotenv");
 const conncetDatabase = require("./backend/config/database");
 const cloudinary = require("cloudinary");
