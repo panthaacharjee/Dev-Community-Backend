@@ -15,11 +15,11 @@ app.use(
 app.use(cors());
 
 //Route Imports
-const user = require("./routes/userRoute");
-const post = require("./routes/postRoute");
-const stack = require("./routes/stackRoute");
-const job = require("./routes/jobRoute");
-const project = require("./routes/projectRoute");
+const user = require("./backend/routes/userRoute");
+const post = require("./backend/routes/postRoute");
+const stack = require("./backend/routes/stackRoute");
+const job = require("./backend/routes/jobRoute");
+const project = require("./backend/routes/projectRoute");
 
 app.use("/api/v1", user);
 app.use("/api/v1", post);
