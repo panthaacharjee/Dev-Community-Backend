@@ -14,7 +14,7 @@ app.use(
 );
 app.use(
   cors({
-    origin: ["https://master--dev-community-mern.netlify.app/"],
+    origin: ["https://dev-community-mern.netlify.app/"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: [
