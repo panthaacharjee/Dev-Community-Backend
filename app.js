@@ -24,6 +24,7 @@ app.use(
     ],
   })
 );
+// app.use(cors());
 
 //Route Imports
 const user = require("./backend/routes/userRoute");
