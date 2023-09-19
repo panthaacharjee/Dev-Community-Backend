@@ -12,19 +12,19 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(
   fileUpload({ limits: { fieldSize: 50 * 1024 * 1024 }, useTempFiles: true })
 );
-app.use(
-  cors({
-    origin: ["https://dev-community-mern.netlify.app/"],
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: [
-      "Access-Control-Allow-Origin",
-      "Content-Type",
-      "Authorization",
-    ],
-  })
-);
-// app.use(cors());
+// app.use(
+//   cors({
+//     origin: ["https://dev-community-mern.netlify.app/"],
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//     allowedHeaders: [
+//       "Access-Control-Allow-Origin",
+//       "Content-Type",
+//       "Authorization",
+//     ],
+//   })
+// );
+app.use(cors());
 
 //Route Imports
 const user = require("./backend/routes/userRoute");
