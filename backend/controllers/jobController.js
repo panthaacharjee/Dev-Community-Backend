@@ -37,8 +37,6 @@ exports.getAllJobs = catchAsyncError(async (req, res, next) => {
     Job.find().sort({ createdAt: -1 }).populate("owner"),
     req.query
   ).search();
-  // Job.find().sort({ createdAt: -1 }).populate("owner")
-
   const jobs = await apifeatures.query;
 
   res.status(200).json({
